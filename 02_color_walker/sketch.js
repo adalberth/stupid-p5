@@ -8,6 +8,7 @@
 // http://p5js.org/examples/
 
 // @adalberth - Stupid Studio - 2016
+// https://github.com/adalberth/stupid-p5
 
 var x
 var y
@@ -25,15 +26,22 @@ function draw() {
   }else if(rx > 0.66){
     x = x - 10
   }
-  
+
   var ry = random()
   if (ry < 0.33) {
     y = y + 10
   }else if(ry > 0.66){
     y = y - 10
   }
-  
+
+  x = constrain(x, 0, width)
+  y = constrain(y, 0, height)
+
+  r = random(255)
+  g = random(255)
+  b = random(255)
+
   noStroke()
-  fill(random(255), random(255), random(255))
+  fill(r, g, b)
   rect(x,y,10,10)
 }

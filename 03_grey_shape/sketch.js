@@ -8,6 +8,7 @@
 // http://p5js.org/examples/
 
 // @adalberth - Stupid Studio - 2016
+// https://github.com/adalberth/stupid-p5
 
 var r
 var x
